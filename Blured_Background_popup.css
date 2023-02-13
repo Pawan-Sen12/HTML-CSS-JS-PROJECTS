@@ -1,0 +1,111 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(./Blured_Background_popup.img/Background-image.png);
+    background-size: cover;
+    transition: filter 0.7s;
+
+}
+h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.btn{
+    padding: 10px 20px;
+    width: 200px;
+    cursor: pointer;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: white ;
+}
+
+.active.container{
+    filter: blur(5px) brightness(.7);
+}
+
+.popup_container{
+    position: fixed;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: url(./Blured_Background_popup.img/post-10.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    opacity: 1;
+    transition: all 0.7s;
+
+}
+
+h4{
+    font-size: 30px;
+    margin: 10px 0;
+    font-family: sans-serif;
+    color: green;
+}
+label{
+    color: green;
+    font-family: sans-serif;
+}
+
+.popup-button{
+    background-color: green;
+    padding: 10px;
+    font-size: 20px;
+     cursor: pointer;
+     border: 2px solid;
+}
+
+.input{
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.input::placeholder{
+    color: lightgray;
+}
+
+.close-icon{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-icon:hover{
+    color: green;
+}
+
+.active.popup_container{
+   visibility: hidden;
+   opacity: 0;
+   top: 10%;
+}

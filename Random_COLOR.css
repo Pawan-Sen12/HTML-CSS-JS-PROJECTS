@@ -1,0 +1,42 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+
+}
+
+h1{
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    position: relative;
+    left: 300px;
+    padding: 4px 6px;
+    background: orange;
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.color-container{
+   background-color: orange;
+   width: 300px;
+   height: 150px;
+   color: white;
+   margin: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+   border: solid black 2px;
+   border-radius: 10px;
+}
